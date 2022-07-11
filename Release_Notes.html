@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for X-CUBE-SFXS2LP1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-x-cube-sfxs2lp1-software-for-stm32"><small>Release Notes for</small> <strong>X-CUBE-SFXS2LP1 Software for STM32</strong></h1>
+<p>Copyright © 2022 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>The <strong>X-CUBE-SFXS2LP1</strong> is an expansion software package for STM32Cube. This software provides S2-LP Sigfox library with a complete set of API to develop embedded applications. The pack can be installed and configured by user using CubeMX.User applications can be built using Sigfox long range wireless area network running on the S2-LP high performance ultra-low power RF transceiver. Graphical user interface (GUI) PC application provides an interactive interface to transmit messages to the Sigfox network. The software comes with a sample implementation of the drivers running on the X-NUCLEO-S2868A1 expansion board connected to a NUCLEO-L073RZ, NUCLEO-L152RE or NUCLEO-L476RG development board. It is built on top of STM32Cube software technology that ease portability across different STM32 microcontrollers.</p>
+<p>X-CUBE-SFXS2LP1 software features:</p>
+<ul>
+<li>Complete software to build applications using Sigfox long range wireless area network running on the S2-LP high performance ultra-low power RF transceiver.</li>
+<li>It provides an S2-LP Sigfox library with a complete set of APIs to develop embedded applications.</li>
+<li>Graphical user interface (GUI) PC application provides an interactive interface to transmit messages to the Sigfox network.</li>
+<li>Sample implementation available on X-NUCLEO-S2868A1/X-NUCLEO-S2868A2/X-NUCLEO-S2915A1 board connected to a NUCLEO-L073RZ, NUCLEO-L152RE or NUCLEO-L476RG development board.</li>
+<li>Easy portability across different MCU families, thanks to STM32Cube.</li>
+<li>Free, user-friendly license terms.</li>
+</ul>
+<p>The figure below shows the overall architecture.</p>
+<p><a href=""><img src="_htmresc/X-CUBE-S2868A1_Software_Architecture.jpg" alt="X-CUBE-SFXS2LP1 Block Diagram" /></a></p>
+<p>Here is the list of references to user documents:</p>
+<ul>
+<li><a href="https://www.st.com/resource/en/schematic_pack/x-nucleo-s2868a1_schematic.pdf">X-NUCLEO-S2868A1 SCHEMATIC</a></li>
+<li><a href="https://www.st.com/resource/en/schematic_pack/x-nucleo-s2868a2_schematic.pdf">X-NUCLEO-S2868A2 SCHEMATIC</a></li>
+<li><a href="https://www.st.com/resource/en/schematic_pack/x-nucleo-s2915a1_schematic.pdf">X-NUCLEO-S2915A1 SCHEMATIC</a></li>
+<li><a href="https://www.st.com/resource/en/datasheet/s2-lp.pdf">DS11896 Ultra-low power, high performance, sub-1GHz transceiver</a></li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00498153.pdf">UM2405 Getting started with the X-NUCLEO-S2868A1 Sub-1 GHz 868 MHz RF expansion board based on S2-LP radio for STM32 Nucleo</a></li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00656126.pdf">UM2638 Getting started with the X-NUCLEO-S2868A2 Sub-1 GHz 868 MHz RF expansion board based on S2-LP radio for STM32 Nucleo</a></li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00660355.pdf">UM2641 Getting started with the X-NUCLEO-S2915A1 Sub-1 GHz 915 MHz RF expansion board based on S2-LP radio for STM32 Nucleo</a></li>
+</ul>
+</div>
+<section id="update-history" class="col-sm-12 col-lg-8">
+<h1>Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section3" checked aria-hidden="true"> <label for="collapse-section3" aria-hidden="true">V4.0.0 / 1-Feb-2022</label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="product-update">Product update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Alignment to STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0.pack for STM32CubeMX (minimum required version V6.5.0)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<p>The X-CUBE-SFXS2LP1 expansion software package includes drivers for S2-LP and library for the Sigfox proprietary protocol with Monarch feature. This expansion software package comes with a rich set of examples running on STMicroelectronics boards, organized by board and provided with preconfigured projects for the main supported toolchains.</p> 
+<p>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</p>
+<table>
+<caption>Documentation<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Document</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X-CUBE-SFXS2LP1 API Description</td>
+<td style="text-align: left;">V4.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\X-CUBE-SFXS2LP1.chm">CHM</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Getting Started with X-CUBE-SFXS2LP1 pack for STM32CubeMX</td>
+<td style="text-align: left;">V4.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\STMicroelectronics.X-CUBE-SFXS2LP1_GettingStarted.pdf">PDF</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Drivers<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">STM32L0xx CMSIS</td>
+<td style="text-align: left;">V1.9.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L0xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L1xx CMSIS</td>
+<td style="text-align: left;">V2.3.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L1xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L4xx CMSIS</td>
+<td style="text-align: left;">V1.7.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L4xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L0xx HAL</td>
+<td style="text-align: left;">V1.10.5<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L0xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L1xx HAL</td>
+<td style="text-align: left;">V1.4.4<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L1xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L4xx HAL</td>
+<td style="text-align: left;">V1.13.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L4xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L0xx_Nucleo</td>
+<td style="text-align: left;">V2.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L0xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP STM32L1xx_Nucleo</td>
+<td style="text-align: left;">V1.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L1xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L4xx_Nucleo</td>
+<td style="text-align: left;">V2.1.7<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L4xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP S2868A1</td>
+<td style="text-align: left;">V4.1.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\S2868A1\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP S2868A2</td>
+<td style="text-align: left;">V4.1.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\S2868A2\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP S2915A1</td>
+<td style="text-align: left;">V4.1.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\S2915A1\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Middlewares<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sigfox</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sigfox_STM32_Library</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox_STM32_Library\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Projects<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Projects</td>
+<td style="text-align: left;">V4.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Projects\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Utilities<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">CLI</td>
+<td style="text-align: left;">V1.2.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Utilities\CLI\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations">Known Limitations</h2>
+<ul>
+<li>The firmware is only supported for Cortex-M0/M3/M4</li>
+<li>USE_FLASH option is only supported for NUCLEO-L0/L1/L4</li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V9.20.1</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
+<li>STM32CubeIDE V1.8.0</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li>NUCLEO-L073RZ MB1136 rev.C</li>
+<li>NUCLEO-L152RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>X-NUCLEO-S2868A1</li>
+<li>X-NUCLEO-S2915A1</li>
+<li>X-NUCLEO-S2868A2</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL L0 V1.10.4</li>
+<li>STM32CubeHAL L1 V1.4.3</li>
+<li>STM32CubeHAL L4 V1.13.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2" checked aria-hidden="true"> <label for="collapse-section2" aria-hidden="true">V3.1.0 / 31-May-2021</label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="product-update">Product update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Alignment to STMicroelectronics.X-CUBE-SFXS2LP1.3.1.0.pack for STM32CubeMX (minimum required version V6.3.0)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Added support to Example Selector in STM32CubeMX</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<p>The X-CUBE-SFXS2LP1 expansion software package includes drivers for S2-LP and library for the Sigfox proprietary protocol with Monarch feature. This expansion software package comes with a rich set of examples running on STMicroelectronics boards, organized by board and provided with preconfigured projects for the main supported toolchains.</p>
+<p>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</p>
+<table>
+<caption>Documentation<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Document</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X-CUBE-SFXS2LP1 API Description</td>
+<td style="text-align: left;">V3.1.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\X-CUBE-SFXS2LP1.chm">CHM</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Getting Started with X-CUBE-SFXS2LP1 pack for STM32CubeMX</td>
+<td style="text-align: left;">V3.1.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\STMicroelectronics.X-CUBE-SFXS2LP1_GettingStarted.pdf">PDF</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Drivers<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">STM32L0xx CMSIS</td>
+<td style="text-align: left;">V1.9.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L0xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L1xx CMSIS</td>
+<td style="text-align: left;">V2.3.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L1xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L4xx CMSIS</td>
+<td style="text-align: left;">V1.7.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L4xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L0xx HAL</td>
+<td style="text-align: left;">V1.10.4<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L0xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L1xx HAL</td>
+<td style="text-align: left;">V1.4.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L1xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L4xx HAL</td>
+<td style="text-align: left;">V1.13.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L4xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L0xx_Nucleo</td>
+<td style="text-align: left;">V2.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L0xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP STM32L1xx_Nucleo</td>
+<td style="text-align: left;">V2.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L1xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L4xx_Nucleo</td>
+<td style="text-align: left;">V2.1.7<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L4xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Middlewares<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sigfox</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sigfox_STM32_Library</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox_STM32_Library\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Projects<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Projects</td>
+<td style="text-align: left;">V3.1.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Projects\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Utilities<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">CLI</td>
+<td style="text-align: left;">V1.2.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Utilities\CLI\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations">Known Limitations</h2>
+<ul>
+<li>The firmware is only supported for Cortex-M0/M3/M4</li>
+<li>USE_FLASH option is only supported for NUCLEO-L0/L1/L4</li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.9</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
+<li>STM32CubeIDE V1.6.1</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li>NUCLEO-L073RZ MB1136 rev.C</li>
+<li>NUCLEO-L152RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>X-NUCLEO-S2868A1</li>
+<li>X-NUCLEO-S2915A1</li>
+<li>X-NUCLEO-S2868A2</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL L0 V1.10.4</li>
+<li>STM32CubeHAL L1 V1.4.3</li>
+<li>STM32CubeHAL L4 V1.13.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section1" checked aria-hidden="true"> <label for="collapse-section1" aria-hidden="true">V3.0.0 / 05-February-2021</label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="product-update">Product update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">This software package includes drivers for S2-LP and library for the Sigfox proprietary protocol with Monarch feature.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The pack includes updated sigfox library file</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<p>The X-CUBE-SFXS2LP1 expansion software package includes drivers for S2-LP and library for the Sigfox proprietary protocol with Monarch feature. This expansion software package comes with a rich set of examples running on STMicroelectronics boards, organized by board and provided with preconfigured projects for the main supported toolchains.</p>
+<p>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</p>
+<table>
+<caption>Documentation<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Document</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X-CUBE-SFXS2LP1 API Description</td>
+<td style="text-align: left;">V3.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\X-CUBE-SFXS2LP1.chm">CHM</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Getting Started with X-CUBE-SFXS2LP1 pack for STM32CubeMX</td>
+<td style="text-align: left;">V3.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\STMicroelectronics.X-CUBE-SFXS2LP1_GettingStarted.pdf">PDF</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Drivers<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">STM32L0xx CMSIS</td>
+<td style="text-align: left;">V1.9.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L0xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L1xx CMSIS</td>
+<td style="text-align: left;">V2.3.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L1xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L4xx CMSIS</td>
+<td style="text-align: left;">V1.7.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L4xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L0xx HAL</td>
+<td style="text-align: left;">V1.12.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L0xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L1xx HAL</td>
+<td style="text-align: left;">V1.10.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L1xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L4xx HAL</td>
+<td style="text-align: left;">V1.17.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L4xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L0xx_Nucleo</td>
+<td style="text-align: left;">V2.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L0xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP STM32L1xx_Nucleo</td>
+<td style="text-align: left;">V2.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L1xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L4xx_Nucleo</td>
+<td style="text-align: left;">V2.1.7<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L4xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Middlewares<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sigfox</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sigfox_STM32_Library</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox_STM32_Library\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Projects<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Projects</td>
+<td style="text-align: left;">V3.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Projects\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Utilities<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">CLI</td>
+<td style="text-align: left;">V1.2.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Utilities\CLI\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations">Known Limitations</h2>
+<ul>
+<li>The firmware is only supported for Cortex-M0/M3/M4</li>
+<li>USE_FLASH option is only supported for NUCLEO-L0/L1/L4</li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.5</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
+<li>STM32CubeIDE V1.4.0</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li>NUCLEO-L073RZ MB1136 rev.C</li>
+<li>NUCLEO-L152RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>X-NUCLEO-S2868A1</li>
+<li>X-NUCLEO-S2915A1</li>
+<li>X-NUCLEO-S2868A2</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL L0 V1.12.0</li>
+<li>STM32CubeHAL L1 V1.10.2</li>
+<li>STM32CubeHAL L4 V1.17.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0" aria-hidden="true"> <label for="collapse-section0" aria-hidden="true">V2.0.0 / 09-November-2020</label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<h3 id="product-update-1">Product update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">This software package includes drivers for S2-LP and library for the Sigfox proprietary protocol with Monarch feature.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> The pack can be installed and configured with CubeMX. This is the first release on CubeMX.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents-1">Contents</h2>
+<p>The X-CUBE-SFXS2LP1 expansion software package includes drivers for S2-LP and library for the Sigfox proprietary protocol with Monarch feature. This expansion software package comes with a rich set of examples running on STMicroelectronics boards, organized by board and provided with preconfigured projects for the main supported toolchains.</p>
+<p>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</p>
+<table>
+<caption>Documentation<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Document</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X-CUBE-SFXS2LP1 API Description</td>
+<td style="text-align: left;">V2.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\X-CUBE-SFXS2LP1.chm">CHM</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Getting Started with X-CUBE-SFXS2LP1 pack for STM32CubeMX</td>
+<td style="text-align: left;">V2.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Documentation\STMicroelectronics.X-CUBE-SFXS2LP1_GettingStarted.pdf">PDF</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Drivers<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">STM32L0xx CMSIS</td>
+<td style="text-align: left;">V1.9.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L0xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L1xx CMSIS</td>
+<td style="text-align: left;">V2.3.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L1xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L4xx CMSIS</td>
+<td style="text-align: left;">V1.7.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L4xx\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L0xx HAL</td>
+<td style="text-align: left;">V1.12.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L0xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L1xx HAL</td>
+<td style="text-align: left;">V1.10.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L1xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L4xx HAL</td>
+<td style="text-align: left;">V1.16.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\STM32L4xx_HAL_Driver\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L0xx_Nucleo</td>
+<td style="text-align: left;">V2.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L0xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP STM32L1xx_Nucleo</td>
+<td style="text-align: left;">V2.1.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L1xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32L4xx_Nucleo</td>
+<td style="text-align: left;">V2.1.7<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L4xx_Nucleo\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Middlewares<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sigfox</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox\Release_Notes.html">release notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sigfox_STM32_Library</td>
+<td style="text-align: left;">V2.8.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Sigfox_STM32_Library\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Projects<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Projects</td>
+<td style="text-align: left;">V2.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Projects\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Utilities<br />
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">CLI</td>
+<td style="text-align: left;">V1.2.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="Utilities\CLI\Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations-1">Known Limitations</h2>
+<ul>
+<li>The firmware is only supported for Cortex-M0/M3/M4</li>
+<li>USE_FLASH option is only supported for NUCLEO-L0/L1/L4</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-1">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.5</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
+<li>STM32CubeIDE V1.4.0</li>
+</ul>
+<h2 id="supported-devices-and-boards-1">Supported Devices and Boards</h2>
+<ul>
+<li>NUCLEO-L073RZ MB1136 rev.C</li>
+<li>NUCLEO-L152RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>X-NUCLEO-S2868A1</li>
+<li>X-NUCLEO-S2915A1</li>
+<li>X-NUCLEO-S2868A2</li>
+</ul>
+<h2 id="dependencies-1">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL L0 V1.12.0</li>
+<li>STM32CubeHAL L1 V1.10.2</li>
+<li>STM32CubeHAL L4 V1.16.0</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>X-CUBE-SFXS2LP1</strong> , visit: <a href="https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32cube-expansion-packages/x-cube-sfxs2lp.html">www.st.com</a></p>
+</div><div class="column" style="width:5%;">
+<p><abbr title="Based on template cx566953 version 2.0">Info</abbr></p>
+</div>
+</div>
+</footer>
+</body>
+</html>
