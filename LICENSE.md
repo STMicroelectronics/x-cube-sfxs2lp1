@@ -1,7 +1,7 @@
 | Component                                            | Copyright                        | License    |
 |:---------                                            |:-------                 		  |:-----------|
-| Core CMSIS                           	               | ARM Limited 					  | Apache 2.0 |		    	
-| STM32 CMSIS Device                                   | ARM Limited - STMicroelectronics | Apache 2.0 |   	            
+| Core CMSIS                           	               | ARM Limited 					  | Apache-2.0 |		    	
+| STM32 CMSIS Device                                   | ARM Limited - STMicroelectronics | Apache-2.0 |   	            
 | STM32L0 HAL/LL Driver                                | STMicroelectronics 			  | BSD-3-Clause |  						
 | STM32L1 HAL/LL Driver                                | STMicroelectronics      		  | BSD-3-Clause | 			
 | STM32L4 HAL/LL Driver                                | STMicroelectronics 			  | BSD-3-Clause |   						
